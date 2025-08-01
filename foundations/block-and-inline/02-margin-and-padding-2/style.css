@@ -3,25 +3,49 @@ body {
   font-family: sans-serif;
 }
 
+/* 11. Added 8px padding,  */
 .card {
   width: 400px;
   background: #fff;
+  padding: 8px;
   margin: 16px auto;
 }
 
+/* 12. Added margin-bottom 8px for title and content */
+/* 13 & 14. Added 16px font, 8px padding */
 .title {
   background: #e3f4ff;
+  font-size: 16px;
+  padding: 8px;
+  margin-bottom: 8px;
 }
 
+
+/* 15. Added 16px padding top & bottom, 8px padding left & right */
 .content {
   background: #e3f4ff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 8px;
 }
 
+/* 16. Added text-align center and padding */
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  padding: 8px;
 }
 
+/* 18. Added 8px padding top & bottom, 24px padding left & right
+       Added display box to stack the button and margin: auto to center
+*/
 button {
+  display: block;
+  margin: auto;
+  /* Short hand instead of specifying top, bottom, left, and right padding */
+  padding: 8px 24px;
   background: white;
   border: 1px solid #eee;
 }
