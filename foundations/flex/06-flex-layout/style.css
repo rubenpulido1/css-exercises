@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* Added Code Below */
+  display: flex;
+  flex-direction: column;
+
 }
 
 img {
@@ -16,6 +20,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* Added Code Below */
+  padding: 8px 16px;
 }
 
 input {
@@ -23,4 +29,43 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+  /* Added Code Below */
+  margin-bottom: 10px;
+}
+
+/* Code Added Below */
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* 
+    Specifies for container to use all of the free space thus, 
+    pushing the footer to the bottom.  
+  */
+  flex: 1;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
 }
